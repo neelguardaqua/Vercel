@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sewage Treatment Plant Manufacturer in India | Neel Guard Aqua Systems</title>
+  <meta name="description" content="Neel Guard Aqua Systems is a trusted Sewage Treatment Plant Manufacturer and STP Plant Supplier offering advanced sewage treatment solutions for commercial, residential, and industrial applications."/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:    #0B1F3A;
+      --teal:    #00A896;
+      --teal-lt: #00C9B1;
+      --sky:     #E8F7F5;
+      --white:   #FFFFFF;
+      --slate:   #4A5568;
+      --mist:    #F0F9F8;
+      --border:  #D0EAE6;
+      --shadow:  0 4px 24px rgba(11,31,58,0.10);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--navy);
+      background: var(--white);
+      line-height: 1.65;
+      font-size: 16px;
+    }
+
+    /* ── NAVBAR ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 999;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5vw;
+      height: 68px;
+      box-shadow: 0 2px 12px rgba(11,31,58,0.07);
+    }
+    .nav-logo {
+      display: flex; align-items: center; gap: 10px;
+      text-decoration: none;
+    }
+    .nav-logo-icon {
+      width: 38px; height: 38px;
+      background: var(--teal);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .nav-logo-icon svg { width: 22px; height: 22px; fill: white; }
+    .nav-logo-text { font-family: 'Sora', sans-serif; font-size: 1rem; font-weight: 700; color: var(--navy); line-height: 1.2; }
+    .nav-logo-text span { display: block; font-weight: 400; font-size: 0.72rem; color: var(--teal); letter-spacing: 0.04em; }
+
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { text-decoration: none; color: var(--slate); font-size: 0.9rem; font-weight: 500; transition: color .2s; }
+    .nav-links a:hover { color: var(--teal); }
+
+    .nav-cta {
+      background: var(--teal); color: var(--white);
+      border: none; border-radius: 6px;
+      padding: 9px 20px; font-size: 0.875rem; font-weight: 600;
+      cursor: pointer; text-decoration: none;
+      transition: background .2s, transform .15s;
+    }
+    .nav-cta:hover { background: var(--navy); transform: translateY(-1px); }
+
+    /* Hamburger */
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; }
+    .hamburger span { width: 24px; height: 2px; background: var(--navy); border-radius: 2px; transition: .3s; }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, var(--navy) 0%, #133558 60%, #0f4a5c 100%);
+      display: flex; align-items: center;
+      padding: 100px 5vw 60px;
+      position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Ccircle cx='30' cy='30' r='1' fill='%2300A896' fill-opacity='0.15'/%3E%3C/g%3E%3C/svg%3E") repeat;
+      opacity: .6;
+    }
+    .hero-content { position: relative; max-width: 620px; }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(0,168,150,0.18); border: 1px solid rgba(0,168,150,0.4);
+      color: var(--teal-lt); border-radius: 20px;
+      padding: 6px 16px; font-size: 0.78rem; font-weight: 600;
+      letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 24px;
+    }
+    .hero-badge::before { content: '●'; font-size: 0.5rem; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.3} }
+
+    .hero h1 {
+      font-family: 'Sora', sans-serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 800; color: var(--white);
+      line-height: 1.15; margin-bottom: 20px;
+    }
+    .hero h1 .accent { color: var(--teal-lt); }
+
+    .hero p {
+      color: rgba(255,255,255,0.78); font-size: 1.05rem;
+      max-width: 540px; margin-bottom: 36px; line-height: 1.7;
+    }
+
+    .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 48px; }
+    .btn-primary {
+      background: var(--teal); color: var(--white);
+      border: none; border-radius: 8px;
+      padding: 14px 28px; font-size: 0.95rem; font-weight: 600;
+      cursor: pointer; text-decoration: none;
+      transition: background .2s, transform .15s, box-shadow .2s;
+      box-shadow: 0 4px 16px rgba(0,168,150,0.35);
+    }
+    .btn-primary:hover { background: var(--teal-lt); transform: translateY(-2px); box-shadow: 0 6px 24px rgba(0,168,150,0.5); }
+    .btn-outline {
+      background: transparent; color: var(--white);
+      border: 2px solid rgba(255,255,255,0.4); border-radius: 8px;
+      padding: 12px 26px; font-size: 0.95rem; font-weight: 600;
+      cursor: pointer; text-decoration: none;
+      transition: border-color .2s, background .2s;
+    }
+    .btn-outline:hover { border-color: var(--white); background: rgba(255,255,255,0.08); }
+
+    .hero-pills { display: flex; flex-wrap: wrap; gap: 10px; }
+    .hero-pill {
+      display: flex; align-items: center; gap: 6px;
+      background: rgba(255,255,255,0.09); border: 1px solid rgba(255,255,255,0.15);
+      color: rgba(255,255,255,0.85); border-radius: 20px;
+      padding: 6px 14px; font-size: 0.8rem; font-weight: 500;
+    }
+    .hero-pill svg { width: 14px; height: 14px; fill: var(--teal-lt); flex-shrink: 0; }
+
+    /* Floating card */
+    .hero-visual {
+      position: absolute; right: 5vw; bottom: 60px;
+      background: rgba(255,255,255,0.07); backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.15); border-radius: 16px;
+      padding: 24px 28px; min-width: 240px;
+    }
+    .hero-stat { margin-bottom: 16px; }
+    .hero-stat:last-child { margin-bottom: 0; }
+    .hero-stat-num { font-family: 'Sora', sans-serif; font-size: 1.8rem; font-weight: 800; color: var(--teal-lt); }
+    .hero-stat-label { font-size: 0.78rem; color: rgba(255,255,255,0.6); margin-top: 2px; }
+
+    /* ── SECTION BASE ── */
+    section { padding: 80px 5vw; }
+    .section-label {
+      font-size: 0.78rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.1em; color: var(--teal); margin-bottom: 10px;
+    }
+    .section-title {
+      font-family: 'Sora', sans-serif;
+      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+      font-weight: 700; color: var(--navy); line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    .section-sub {
+      color: var(--slate); font-size: 1rem; max-width: 580px; line-height: 1.7;
+    }
+    .section-head { margin-bottom: 52px; }
+
+    /* ── WHY CHOOSE ── */
+    .why { background: var(--mist); }
+    .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px; }
+    .why-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: 14px; padding: 32px 28px;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .why-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+    .why-icon {
+      width: 52px; height: 52px; background: var(--sky);
+      border-radius: 12px; display: flex; align-items: center; justify-content: center;
+      margin-bottom: 18px;
+    }
+    .why-icon svg { width: 26px; height: 26px; fill: var(--teal); }
+    .why-card h3 { font-family: 'Sora', sans-serif; font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; }
+    .why-card p { color: var(--slate); font-size: 0.9rem; line-height: 1.6; }
+
+    /* Treatment process badges */
+    .treatment-badges { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+    .t-badge {
+      display: flex; align-items: center; gap: 8px;
+      background: var(--sky); border: 1px solid var(--border);
+      border-radius: 8px; padding: 10px 16px; font-size: 0.85rem; font-weight: 600; color: var(--navy);
+    }
+    .t-badge-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--teal); }
+
+    /* ── SOLUTIONS ── */
+    .solutions-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; }
+    .sol-card {
+      border-radius: 14px; padding: 28px 24px;
+      background: var(--white); border: 1px solid var(--border);
+      position: relative; overflow: hidden;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .sol-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0;
+      height: 4px; background: var(--teal);
+    }
+    .sol-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+    .sol-card h3 { font-family: 'Sora', sans-serif; font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
+    .sol-card p { color: var(--slate); font-size: 0.88rem; line-height: 1.6; }
+    .sol-tag {
+      display: inline-block; background: var(--sky);
+      color: var(--teal); font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      border-radius: 4px; padding: 3px 8px; margin-bottom: 12px;
+    }
+
+    /* ── BENEFITS ── */
+    .benefits { background: var(--navy); }
+    .benefits .section-title { color: var(--white); }
+    .benefits .section-label { color: var(--teal-lt); }
+    .benefits .section-sub { color: rgba(255,255,255,0.65); }
+    .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
+    .benefit-card {
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 14px; padding: 28px 24px;
+      transition: background .2s;
+    }
+    .benefit-card:hover { background: rgba(0,168,150,0.12); }
+    .benefit-num { font-family: 'Sora', sans-serif; font-size: 2.2rem; font-weight: 800; color: var(--teal-lt); margin-bottom: 8px; }
+    .benefit-card h3 { color: var(--white); font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
+    .benefit-card p { color: rgba(255,255,255,0.6); font-size: 0.88rem; line-height: 1.6; }
+
+    /* ── SECTORS ── */
+    .sectors-wrap { display: flex; flex-wrap: wrap; gap: 12px; }
+    .sector-chip {
+      display: flex; align-items: center; gap: 8px;
+      background: var(--white); border: 1.5px solid var(--border);
+      border-radius: 30px; padding: 10px 20px;
+      font-size: 0.9rem; font-weight: 500; color: var(--navy);
+      transition: border-color .2s, background .2s, color .2s;
+      cursor: default;
+    }
+    .sector-chip:hover { border-color: var(--teal); background: var(--sky); color: var(--teal); }
+    .sector-chip svg { width: 16px; height: 16px; fill: var(--teal); flex-shrink: 0; }
+
+    /* ── PROCESS ── */
+    .process { background: var(--mist); }
+    .process-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0; position: relative; }
+    .process-steps::before {
+      content: ''; position: absolute; top: 36px; left: 10%; right: 10%;
+      height: 2px; background: var(--border); z-index: 0;
+    }
+    .step {
+      text-align: center; padding: 0 16px 0; position: relative; z-index: 1;
+    }
+    .step-num {
+      width: 72px; height: 72px; border-radius: 50%;
+      background: var(--white); border: 2px solid var(--teal);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 18px; font-family: 'Sora', sans-serif;
+      font-size: 1.3rem; font-weight: 800; color: var(--teal);
+      box-shadow: 0 0 0 6px var(--sky);
+    }
+    .step h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 8px; }
+    .step p { color: var(--slate); font-size: 0.83rem; line-height: 1.6; }
+
+    /* ── FEATURES ── */
+    .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; }
+    .feat-card {
+      display: flex; gap: 16px; align-items: flex-start;
+      background: var(--mist); border-radius: 12px; padding: 22px 20px;
+      border: 1px solid var(--border);
+    }
+    .feat-icon {
+      width: 44px; height: 44px; background: var(--teal);
+      border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .feat-icon svg { width: 22px; height: 22px; fill: white; }
+    .feat-card h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 4px; }
+    .feat-card p { color: var(--slate); font-size: 0.85rem; line-height: 1.6; }
+
+    /* ── FAQ ── */
+    .faq { background: var(--white); }
+    .faq-list { max-width: 780px; }
+    .faq-item {
+      border: 1px solid var(--border); border-radius: 12px; margin-bottom: 12px; overflow: hidden;
+    }
+    .faq-q {
+      width: 100%; text-align: left; background: none; border: none; cursor: pointer;
+      padding: 20px 24px; font-size: 0.95rem; font-weight: 600; color: var(--navy);
+      display: flex; justify-content: space-between; align-items: center; gap: 12px;
+    }
+    .faq-q:hover { background: var(--sky); }
+    .faq-q svg { width: 18px; height: 18px; fill: var(--teal); flex-shrink: 0; transition: transform .3s; }
+    .faq-a {
+      max-height: 0; overflow: hidden; transition: max-height .35s ease, padding .35s;
+      color: var(--slate); font-size: 0.9rem; line-height: 1.7;
+      padding: 0 24px;
+    }
+    .faq-item.open .faq-a { max-height: 200px; padding: 0 24px 20px; }
+    .faq-item.open .faq-q svg { transform: rotate(45deg); }
+
+    /* ── CTA BAND ── */
+    .cta-band {
+      background: linear-gradient(135deg, var(--teal) 0%, #00796B 100%);
+      padding: 70px 5vw; text-align: center;
+    }
+    .cta-band h2 {
+      font-family: 'Sora', sans-serif;
+      font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 800;
+      color: var(--white); margin-bottom: 14px;
+    }
+    .cta-band p { color: rgba(255,255,255,0.85); max-width: 520px; margin: 0 auto 32px; line-height: 1.7; }
+    .cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .btn-white {
+      background: var(--white); color: var(--teal);
+      border: none; border-radius: 8px;
+      padding: 14px 28px; font-size: 0.95rem; font-weight: 700;
+      cursor: pointer; text-decoration: none;
+      transition: transform .15s, box-shadow .2s;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    }
+    .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.18); }
+    .btn-ghost {
+      background: rgba(255,255,255,0.15); color: var(--white);
+      border: 2px solid rgba(255,255,255,0.5); border-radius: 8px;
+      padding: 12px 26px; font-size: 0.95rem; font-weight: 600;
+      cursor: pointer; text-decoration: none;
+      transition: background .2s;
+    }
+    .btn-ghost:hover { background: rgba(255,255,255,0.25); }
+
+    /* ── CONTACT ── */
+    .contact { background: var(--mist); }
+    .contact-inner {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;
+    }
+    .contact-info h2 { font-family: 'Sora', sans-serif; font-size: 1.8rem; font-weight: 800; margin-bottom: 14px; }
+    .contact-info p { color: var(--slate); margin-bottom: 28px; line-height: 1.7; }
+    .contact-detail {
+      display: flex; align-items: center; gap: 12px;
+      padding: 14px 0; border-bottom: 1px solid var(--border);
+      font-size: 0.9rem;
+    }
+    .contact-detail:last-of-type { border-bottom: none; }
+    .contact-icon {
+      width: 40px; height: 40px; background: var(--teal); border-radius: 10px;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .contact-icon svg { width: 20px; height: 20px; fill: white; }
+    .contact-detail a { color: var(--navy); text-decoration: none; font-weight: 500; }
+    .contact-detail a:hover { color: var(--teal); }
+
+    .contact-form {
+      background: var(--white); border-radius: 16px;
+      padding: 36px 32px; border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+    .contact-form h3 { font-family: 'Sora', sans-serif; font-size: 1.2rem; font-weight: 700; margin-bottom: 24px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-group { margin-bottom: 18px; }
+    .form-group label { display: block; font-size: 0.83rem; font-weight: 600; margin-bottom: 6px; color: var(--navy); }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%; padding: 11px 14px;
+      border: 1.5px solid var(--border); border-radius: 8px;
+      font-size: 0.9rem; font-family: 'Inter', sans-serif;
+      color: var(--navy); background: var(--white);
+      transition: border-color .2s, box-shadow .2s;
+      outline: none;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      border-color: var(--teal);
+      box-shadow: 0 0 0 3px rgba(0,168,150,0.15);
+    }
+    .form-group textarea { resize: vertical; min-height: 100px; }
+    .form-submit {
+      width: 100%; padding: 14px;
+      background: var(--teal); color: var(--white);
+      border: none; border-radius: 8px;
+      font-size: 1rem; font-weight: 700; cursor: pointer;
+      transition: background .2s, transform .15s;
+      font-family: 'Inter', sans-serif;
+    }
+    .form-submit:hover { background: var(--navy); transform: translateY(-1px); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy); color: rgba(255,255,255,0.6);
+      padding: 48px 5vw 28px;
+    }
+    .footer-top { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 32px; margin-bottom: 40px; }
+    .footer-logo { font-family: 'Sora', sans-serif; color: var(--white); font-size: 1.1rem; font-weight: 700; }
+    .footer-logo span { display: block; font-size: 0.75rem; color: var(--teal-lt); font-weight: 400; margin-top: 4px; }
+    .footer-links { display: flex; gap: 40px; flex-wrap: wrap; }
+    .footer-col h4 { color: var(--white); font-size: 0.85rem; font-weight: 600; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.05em; }
+    .footer-col a { display: block; color: rgba(255,255,255,0.55); text-decoration: none; font-size: 0.85rem; margin-bottom: 8px; transition: color .2s; }
+    .footer-col a:hover { color: var(--teal-lt); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 24px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-size: 0.8rem; }
+    .footer-bottom a { color: var(--teal-lt); text-decoration: none; }
+
+    /* ── BACK TO TOP ── */
+    #back-top {
+      position: fixed; bottom: 28px; right: 28px;
+      width: 44px; height: 44px; background: var(--teal);
+      border-radius: 50%; border: none; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; pointer-events: none; transition: opacity .3s, transform .2s;
+      box-shadow: 0 4px 14px rgba(0,168,150,0.4);
+      z-index: 888;
+    }
+    #back-top.visible { opacity: 1; pointer-events: all; }
+    #back-top:hover { transform: scale(1.1); }
+    #back-top svg { width: 18px; height: 18px; fill: white; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .nav-links, .nav-cta { display: none; }
+      .hamburger { display: flex; }
+      .hero-visual { display: none; }
+      .contact-inner { grid-template-columns: 1fr; gap: 40px; }
+      .process-steps::before { display: none; }
+      .process-steps { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) {
+      .form-row { grid-template-columns: 1fr; }
+      .process-steps { grid-template-columns: 1fr; }
+      .step { padding-bottom: 32px; }
+      section { padding: 60px 5vw; }
+    }
+    /* Mobile nav */
+    .mobile-nav {
+      display: none; position: fixed; top: 68px; left: 0; right: 0;
+      background: var(--white); border-bottom: 1px solid var(--border);
+      padding: 20px 5vw; z-index: 998; flex-direction: column; gap: 16px;
+      box-shadow: 0 8px 20px rgba(11,31,58,0.08);
+    }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav a { color: var(--navy); text-decoration: none; font-weight: 500; font-size: 0.95rem; }
+    .mobile-nav .btn-primary { text-align: center; }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  </a><a href="/" class="nav-logo">
+    <img src="https://neelguardaquasystems.in/images/aqua.jpg" 
+         alt="Neel Guard Aqua Systems Logo"
+         style="height:45px;width:auto;">
+</a>
+  <ul class="nav-links">
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#solutions">Solutions</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Get a Free Quote</a>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="#why" onclick="toggleMenu()">Why Us</a>
+  <a href="#solutions" onclick="toggleMenu()">Solutions</a>
+  <a href="#process" onclick="toggleMenu()">Process</a>
+  <a href="#faq" onclick="toggleMenu()">FAQ</a>
+  <a href="#contact" class="btn-primary" onclick="toggleMenu()">Get a Free Quote</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="hero-badge">Trusted STP Manufacturer · India</div>
+    <h1>Advanced <span class="accent">Sewage Treatment</span> Plant Solutions</h1>
+    <p>Neel Guard Aqua Systems delivers certified, customized STP systems for residential complexes, hotels, and industries — engineered for long-term sustainability and regulatory compliance.</p>
+    <div class="hero-btns">
+    </div>
+    <div class="hero-pills">
+      <div class="hero-pill"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>Advanced Treatment Technology</div>
+      <div class="hero-pill"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>Customized Plant Design</div>
+      <div class="hero-pill"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>End-to-End Installation</div>
+      <div class="hero-pill"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>Low Operating Cost</div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-stat"><div class="hero-stat-num">500+</div><div class="hero-stat-label">Projects Delivered</div></div>
+    <div class="hero-stat"><div class="hero-stat-num">15+</div><div class="hero-stat-label">Years Experience</div></div>
+    <div class="hero-stat"><div class="hero-stat-num">PAN India</div><div class="hero-stat-label">Service Coverage</div></div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE -->
+<section class="why" id="why">
+  <div class="section-head">
+    <div class="section-label">Why Choose Us</div>
+    <h2 class="section-title">The Right STP Partner Makes All the Difference</h2>
+    <p class="section-sub">Selecting the right Sewage Treatment Plant Manufacturer ensures efficient wastewater treatment, regulatory compliance, and sustainable water reuse for decades.</p>
+  </div>
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+      <h3>Customized Treatment Solutions</h3>
+      <p>Every project has unique wastewater characteristics. Our engineers design systems tailored to your site and treatment objectives — no cookie-cutter installs.</p>
+      <div class="treatment-badges">
+      
+      </div>
+    </div>
+    <div class="why-card">
+      <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></div>
+      <h3>Proven Industry Experience</h3>
+      <p>With extensive expertise in wastewater treatment technologies, we deliver reliable solutions that perform efficiently under varying operating conditions.</p>
+    </div>
+   
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTIONS -->
+<section id="solutions">
+  <div class="section-head">
+    <div class="section-label">Our Solutions</div>
+    <h2 class="section-title">STP Systems for Every Application</h2>
+    <p class="section-sub">As a trusted STP Plant Manufacturer, we provide comprehensive treatment solutions across all major sectors.</p>
+  </div>
+  <div class="solutions-grid">
+    <div class="sol-card">
+      <div class="sol-tag">Residential</div>
+      <h3>Residential Sewage Treatment</h3>
+      <p>Efficient wastewater treatment systems for housing societies, apartments, and residential townships with compact designs.</p>
+    </div>
+    <div class="sol-card">
+      <div class="sol-tag">Commercial</div>
+      <h3>Commercial Building STP</h3>
+      <p>Customized treatment solutions for offices, malls, business parks, and commercial complexes ensuring code compliance.</p>
+    </div>
+    <div class="sol-card">
+      <div class="sol-tag">Industrial</div>
+      <h3>Industrial Effluent STP</h3>
+      <p>High-capacity treatment systems for industrial campuses and corporate parks requiring large-volume wastewater management.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="benefits" id="benefits">
+  <div class="section-head">
+    <div class="section-label">Key Benefits</div>
+    <h2 class="section-title">Why Every Project Needs an STP</h2>
+    <p class="section-sub">Installing a sewage treatment plant brings measurable operational, environmental, and financial gains from day one.</p>
+  </div>
+  <div class="benefits-grid">
+    <div class="benefit-card">
+      <div class="benefit-num">01</div>
+      <h3>Water Conservation</h3>
+      <p>Treated water is reused for landscaping, flushing, and cooling towers — cutting freshwater dependency significantly.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-num">02</div>
+      <h3>Environmental Compliance</h3>
+      <p>Meet pollution control standards and wastewater discharge regulations set by CPCB and State PCBs.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-num">03</div>
+      <h3>Reduced Freshwater Cost</h3>
+      <p>Recycling treated water meaningfully decreases dependency on costly tanker or municipal water supply.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-num">04</div>
+      <h3>Long-Term Cost Savings</h3>
+      <p>Lower water procurement and wastewater disposal expenses improve operational efficiency over the plant's lifetime.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- SECTORS -->
+<section id="sectors">
+  <div class="section-head">
+    <div class="section-label">Sectors Served</div>
+    <h2 class="section-title">Industries We Work With</h2>
+    <p class="section-sub">Our sewage treatment solutions are installed and operating across a wide range of industries throughout India.</p>
+  </div>
+  <div class="sectors-wrap">
+    <div class="sector-chip"><svg viewBox="0 0 24 24"><path d="0v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>Power Generation Industry</div>
+    <div class="sector-chip"><svg viewBox="0 0 24 24"><path d="20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>Pharmaceutical Industry</div>
+    <div class="sector-chip"><svg viewBox="0 0 24 24"><path d="13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z"/></svg>Textile Industry</div>
+    <div class="sector-chip"><svg viewBox="0 0 24 24"><path d="3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>Electronics and Semiconductor Industry</div>
+    <div class="sector-chip"><svg viewBox="0 0 24 24"><path d="3.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>Chemical Manufacturing Industry</div>
+    <div class="sector-chip"><svg viewBox="0 0 24 24"><path d=" 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg>Commercial Complexes</div>
+    <div class="sector-chip"><svg viewBox="0 0 24 24"><path d="-2.18c.07-.44.18-.88.18-1.5C18 3.12 16.88 2 15.5 2c-1.04 0-1.78.67-2.5 1.5C12.28 2.67 11.54 2 10.5 2 9.12 2 8 3.12 8 4.5c0 .62.11 1.06.18 1.5H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z"/></svg>Oil and Gas Industry</div>
+    <div class="sector-chip"><svg viewBox="0 0 24 24"><path d=" 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14H7v-2h5v2zm5-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>Metal Industry</div>
+    <div class="sector-chip"><svg viewBox="0 0 24 24"><path d=" 9V7h-2V5c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-2h2v-2h-2v-2h2v-2h-2V9h2zm-4 10H4V5h14v14z"/></svg>Paper and Pulp Industry</div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+  <div class="section-head">
+    <div class="section-label">Our Process</div>
+    <h2 class="section-title">From Site Survey to Handover</h2>
+    <p class="section-sub">A structured project execution process ensures every STP is designed, built, and commissioned for optimal performance.</p>
+  </div>
+  <div class="process-steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <h3>Requirement Analysis</h3>
+      <p>We evaluate sewage generation volumes, treatment capacity requirements, and your project objectives.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <h3>System Design</h3>
+      <p>Our experts develop customized treatment plant designs engineered for your site's specific conditions.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <h3>Manufacturing</h3>
+      <p>All equipment is manufactured using quality-tested components and advanced engineering practices.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <h3>Installation & Commissioning</h3>
+      <p>Professional on-site installation ensures smooth plant operation and optimal performance from day one.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">5</div>
+      <h3>Maintenance Support</h3>
+      <p>Ongoing technical support, scheduled maintenance services, and operational guidance throughout the lifecycle.</p>
+    </div>
+  </div>
+</section>
+<!-- BLOG -->
+<div class="container my-5">
+
+    <h2 class="text-center mb-5">Latest Blogs</h2>
+
+    <div style="display:flex; gap:20px; flex-wrap:nowrap; overflow-x:auto;">
+
+        <div style="min-width:350px; background:#fff; padding:25px; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,.1);">
+            <h5>Top 5 ETP Plant Manufacturers in India for Industrial Wastewater Treatment</h5>
+            <a href="https://neelguardaquasystems.in/blog/name/why-industries-trust-water-softener-plant-manufacturer-in-odisha-for-hard-water-treatment">Read More</a>
+        </div>
+
+        <div style="min-width:350px; background:#fff; padding:25px; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,.1);">
+            <h5>Best STP Plant Manufacturer in India: How to Choose the Right Company in 2026</h5>
+            <a href="https://neelguardaquasystems.in/blog/name/best-stp-plant-manufacturer-in-india-2026">Read More</a>
+        </div>
+
+        <div style="min-width:350px; background:#fff; padding:25px; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,.1);">
+            <h5>Why Industries Trust Water Softener Plant Manufacturer In Odisha for Hard Water Treatment</h5>
+            <a href="https://neelguardaquasystems.in/blog/name/why-industries-trust-water-softener-plant-manufacturer-in-odisha-for-hard-water-treatment">Read More</a>
+        </div>
+
+    </div>
+
+
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <h2>Ready to Treat Wastewater the Right Way?</h2>
+  <p>Get a free site assessment and customized STP proposal from our engineering team — no obligation.</p>
+  <div class="cta-btns">
+    <a href="https://neelguardaquasystems.in/contact-us" class="btn-white">Request a Free Quote</a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="section-head">
+    <div class="section-label">FAQs</div>
+    <h2 class="section-title">Common Questions Answered</h2>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        What is a Sewage Treatment Plant?
+        <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      </button>
+      <div class="faq-a">A Sewage Treatment Plant (STP) is a system that removes contaminants from domestic wastewater and sewage before it is discharged into the environment or reused for non-potable applications like gardening and flushing.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Why is a Sewage Treatment Plant important?
+        <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      </button>
+      <div class="faq-a">An STP protects the environment by preventing untreated sewage from entering water bodies, conserves freshwater by enabling treated water reuse, and ensures compliance with wastewater management regulations mandated by the CPCB and State Pollution Control Boards.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Where can treated STP water be reused?
+        <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      </button>
+      <div class="faq-a">Treated water from an STP can be reused for gardening, toilet flushing, cooling towers, landscaping, fire-fighting reserves, and other non-potable applications — reducing your dependency on the municipal water supply.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Which sectors require Sewage Treatment Plants?
+        <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      </button>
+      <div class="faq-a">Residential complexes, commercial buildings, healthcare facilities, hotels and resorts, educational institutions, industrial campuses, and government projects all commonly require STP systems as mandated by environmental regulations.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Does Neel Guard Aqua Systems provide turnkey STP projects?
+        <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      </button>
+      <div class="faq-a">Yes, we offer complete turnkey services including site evaluation, system design, manufacturing, civil coordination, installation, commissioning, operator training, and ongoing AMC-based maintenance support.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        How long does it take to install an STP?
+        <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      </button>
+      <div class="faq-a">Installation timelines vary based on plant capacity and site conditions. Compact residential units typically take 4–8 weeks, while large-capacity commercial or industrial systems may require 10–20 weeks from design approval to commissioning.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <div class="contact-info">
+      <div class="section-label">Contact Us</div>
+      <h2>Get the Best STP Solution for Your Project</h2>
+      <p>Partner with Neel Guard Aqua Systems for reliable, efficient, and sustainable wastewater treatment solutions tailored to your specific requirements.</p>
+      <div class="contact-detail">
+        <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></div>
+        <div><strong>Phone</strong><br><a href="tel:+91XXXXXXXXXX">+91-9899484477</a></div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
+        <div><strong>Email</strong><br><a href="mailto:info@neelguardaquasystems.in">info@neelguardaquasystems.in</a></div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+        <div><strong>Website</strong><br><a href="https://neelguardaquasystems.in/" target="_blank">neelguardaquasystems.in</a></div>
+      </div>
+    </div>
+    
+   
+      
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo">Neel Guard Aqua Systems <span>Sewage Treatment Plant Manufacturer · India</span></div>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+      
+      <div class="footer-col">
+
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:+91XXXXXXXXXX">+91-9899484477</a>
+        <a href="mailto:info@neelguardaquasystems.in">info@neelguardaquasystems.in</a>
+        <a href="https://neelguardaquasystems.in" target="_blank">neelguardaquasystems.in</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Neel Guard Aqua Systems. All rights reserved.</span>
+    <span>Sewage Treatment Plant Manufacturer · STP Plant Supplier · India</span>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+  <svg viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+</button>
+
+<script>
+  // Mobile menu
+  function toggleMenu() {
+    document.getElementById('mobileNav').classList.toggle('open');
+  }
+
+  // FAQ accordion
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!wasOpen) item.classList.add('open');
+  }
+
+  // Back to top visibility
+  window.addEventListener('scroll', () => {
+    const btn = document.getElementById('back-top');
+    btn.classList.toggle('visible', window.scrollY > 400);
+  });
+
+  // Form submit
+  function submitForm() {
+    const name = document.getElementById('fname').value;
+    if (!name.trim()) { alert('Please enter your name.'); return; }
+    alert('Thank you! We\'ll get back to you within 24 hours with a customized proposal.');
+  }
+
+  // Smooth nav close on outside click
+  document.addEventListener('click', (e) => {
+    const nav = document.getElementById('mobileNav');
+    if (nav.classList.contains('open') && !nav.contains(e.target) && !e.target.closest('.hamburger')) {
+      nav.classList.remove('open');
+    }
+  });
+</script>
+</body>
+</html>
